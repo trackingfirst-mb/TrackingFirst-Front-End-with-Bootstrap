@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+    <title>Tracking First | Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <style>
+	      body {
+	        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+	      }
+	    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Tracking First</a>
+          <div class="btn-group pull-right">
+            <a class="btn btn-primary" href="#"><i class="icon-user icon-white"></i>Craig Scribner</a>
+            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="icon-pencil"></i> Edit</a></li>
+              <li><a href="#"><i class="icon-trash"></i> Delete</a></li>
+              <li><a href="#"><i class="icon-ban-circle"></i> Ban</a></li>
+              <li class="divider"></li>
+              <li><a href="#"><i class="i"></i> Make admin</a></li>
+            </ul>
+          </div>
+          <div class="nav-collapse collapse pull-right">
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">Support</a></li>
+              <li class="active"><a href="#contact">Admin</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+       <h1>Admin</h1> 
+      <ul class="nav nav-tabs">
+        <li><a href="#">Users</a></li>
+        <li><a href="#">Groups</a></li>
+        <li class="active"><a href="#">Patterns</a></li>
+<!--        <li><a href="#">Classifications</a></li>
+        <li><a href="#">Admin Settings</a></li>-->
+      </ul>
+   
+      <!-- Button to trigger modal -->
+      <a href="#myModal" role="button" class="btn btn-primary btn-large pull-right" data-toggle="modal">+ Add Pattern</a> <h2>Patterns</h2>
+         <div class="row">
+         	<div class="span12"><h4>Filters</h4></div>
+         </div>
+         <div class="row">
+	         <div class="span2">
+	          
+		         <div class="btn-group pull-left">
+		           <button class="btn">All</button>
+		           <button class="btn">Recent</button>
+		           <button class="active btn">Frequent</button>
+		         </div>
+		         
+	         </div>
+	         
+	         <div class="span2">
+		         <form class="form-inline">
+		          <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+		            <input class="span2" size="16" type="text" value="12-02-2012">
+		            <span class="add-on"><i class="icon-th"></i></span>
+		          </div>
+		         
+		         
+		                
+		     </div>
+		     
+		        
+		         <div class="span2"> 
+		           <div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+		             <input class="span2" size="16" type="text" value="12-02-2012">
+		             <span class="add-on"><i class="icon-th"></i></span>
+		           </div>
+		     </div>
+		 
+		    
+		     <div class="span2">
+		       
+		            <select>
+		              <option>1</option>
+		              <option>2</option>
+		              <option>3</option>
+		              <option>4</option>
+		              <option>5</option>
+		            </select>	
+		     </div>
+		     
+		        
+		     <div class="span2">
+		       
+		     </div>
+		     
+		        
+		      <div class="span2">
+		       <button type="submit" class="btn">Apply</button>
+		       or <a href="#">Clear</a>
+		       </form>
+		     </div>
+		        
+        </div>
+      <div class="row">
+        <div class="span12">
+        <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Pattern</th>
+                          <th>Created By</th>
+                          <th>Qty</th>
+                          <th>Date Created</th>
+                          <th>Parent Report</th>
+                          <th>Manage</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a href="#">google adwords (smb)</a></td>
+                          <td>Craig Xu</td>
+                          <td>0</td>
+                          <td>12/10/2013</td>
+                          <td>Schrute > Campaigns</td>
+                          <td><button class="btn btn-link" type="button">Edit</button><button class="btn btn-link" type="button">Delete</button></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">monthly newsletter</a></td>
+                          <td>Bob Nelson</td>
+                          <td>21</td>
+                          <td>12/10/2013</td>
+                          <td>Schrute > Campaigns</td>
+                          <td><button class="btn btn-link" type="button">Edit</button><button class="btn btn-link" type="button">Delete</button></td>
+                        </tr>
+                        <tr>
+                          <td><a href="#">internal campaigns</a></td>
+                          <td>Fred Jones</td>
+                          <td>12</td>
+                          <td>12/10/2013</td>
+                          <td>Schrute > Campaigns</td>
+                          <td><button class="btn btn-link" type="button">Edit</button><button class="btn btn-link" type="button">Delete</button></td>
+                        </tr>
+                   
+                      </tbody>
+                    </table>
+        </div>
+
+        
+
+
+    </div> <!-- /container -->
+
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
