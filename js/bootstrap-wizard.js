@@ -346,7 +346,7 @@
 
 	Wizard = function(markup, args) {
 		var wizard_template = [
-			'<div class="modal hide wizard-modal" role="dialog">',
+			'<div class="modal hide fade wizard-modal" role="dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">',
 				'<div class="wizard-modal-header modal-header">',
 					'<button class="wizard-close close" type="button">x</button>',
 					'<h3 class="wizard-title"></h3>',
@@ -442,8 +442,9 @@
 		this.el.find(".wizard-steps").css("height", (navHeight+65)+"px");
 		this.el.find(".wizard-card").css("height", (navHeight-60)+"px");
 		this.submitCards.css("height", (navHeight-60)+"px");
+		
 
-		this.el.css("margin-top", -(this.el.height() / 2));
+//		this.el.css("margin-top", -(this.el.height() / 2));
 
 
 		/*
@@ -1045,3 +1046,5 @@
 	};
 
 }(window.jQuery));
+
+
